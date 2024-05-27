@@ -1,4 +1,16 @@
-body {
+:root{
+    --blue-color: #010C89;
+    --orange-color: #FF9601;
+    --green-color: #00E67A;
+}
+
+/* Green buttons */
+.btn-green{
+    border-radius: 25px;
+    line-height: 0.5rem;
+    padding-inline: 50px;
+    background-color: var(--green-color);
+}body {
     font-family: "Montserrat", sans-serif;
     color: #2D2D2D;
 }
