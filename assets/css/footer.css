@@ -1,0 +1,17 @@
+footer {
+    padding-block: 50px;
+    font-weight: 300;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.bg-blue {
+    background-color: rgba(2, 76, 155, 0.05);
+}
+
+.bg-orange {
+    background-color: rgba(255, 149, 1, 0.05);
+}
