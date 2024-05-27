@@ -1,0 +1,17 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #2D2D2D;
+}
+
+a {
+    color: #2D2D2D;
+    text-decoration: none;
+}
+
+.a-hover:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0;
+}
