@@ -4,13 +4,27 @@
     --green-color: #00E67A;
 }
 
+/* UTILITY CLASSES */
+
 /* Green buttons */
 .btn-green{
     border-radius: 25px;
     line-height: 0.5rem;
     padding-inline: 50px;
     background-color: var(--green-color);
-}body {
+}
+
+.bg-blue {
+    background-color: rgba(2, 76, 155, 0.05);
+}
+
+.bg-orange {
+    background-color: rgba(255, 149, 1, 0.05);
+}
+
+/* END UTILITY CLASSES */
+
+body {
     font-family: "Montserrat", sans-serif;
     color: #2D2D2D;
 }
