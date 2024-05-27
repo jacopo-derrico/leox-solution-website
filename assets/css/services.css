@@ -1,0 +1,21 @@
+#services span {
+    font-size: smaller;
+}
+
+.service {
+    height: 200px;
+}
+
+.service:hover{
+    background-color: var(--green-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 32px rgba(0, 230, 123, 0.2);
+}
+
+/* .service:hover > img {
+    display: none;
+}
+
+.service:hover > .more-btn {
+    display: block;
+} */
