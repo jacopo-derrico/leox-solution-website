@@ -30,7 +30,7 @@
     <header class="fixed-top py-1 border-bottom bg-white">
         <nav class="navbar navbar-expand-lg py-2 col-lg-10 mx-auto">
             <div class="container-fluid p-lg-0 d-flex justify-content-between align-content-center">
-                <a class="navbar-brand m-0" href="#">
+                <a class="navbar-brand m-0" href="../index.html">
                     <img src="../assets/img/LeoX-Logo.png" alt="Leox logo" height="30">
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -40,15 +40,122 @@
                 </button>
                 <div class="collapse navbar-collapse flex-lg-grow-0" id="navbarNavAltMarkup">
                     <div class="navbar-nav gap-lg-3">
-                        <a class="nav-link" href="/index.html">Autoriparatori</a>
-                        <a class="nav-link active" aria-current="page" href="/pages/clienti.html">Clienti</a>
-                        <a class="nav-link" href="/pages/contattaci.html">Contattaci</a>
+                        <a class="nav-link" href="../index.html">Autoriparatori</a>
+                        <a class="nav-link active" aria-current="page" href="/clienti.html">Clienti</a>
+                        <a class="nav-link" href="/contattaci.html">Contattaci</a>
                         <a class="nav-link btn-green" href="#">Accedi</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!---------------------------------------------------------------------------------------------->
+
+    <!-- MAIN ------------------------------------------------------------------------------------>
+    <main class="container-fluid">
+
+        <section id="hero" class="row pt-5">
+            <div class="col-lg-10 p-lg-0 mx-auto">
+                <div class="row gap-5 gap-lg-0 align-items-center">
+                    <div class="col-12 col-lg-5 d-flex flex-column gap-5">
+                        <div class="d-flex flex-column gap-4">
+                            <h1>
+                                Spese impreviste?
+                                Oggi con Leox puoi far fronte alle tue spese impreviste per le riparazioni
+                            </h1>
+                            <p>
+                                Chiedi al tuo meccanico se fa parte di Leox, oppure cerca tramite l’app.
+                            </p>
+                        </div>
+                        <div>
+                            <a class="btn btn-green-outline fw-bold" href="#">Scarica l'app</a>
+                            <a class="btn btn-arrow ms-1 fw-bold" href="#payments">
+                                Scopri di più
+                                <img src="../assets/img/leox-icon-arrow.svg" alt="arrow icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <figure class="mb-0">
+                            <img src="../assets/img/clienti/leox-clienti-hero.webp"
+                                alt="Cliente che pensa alle spese dell'auto">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section class="services row bg-orange py-4">
+            <div class="col-lg-10 mx-auto p-lg-0">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-3">
+                        <h4>I vantaggi di Leox?</h4>
+                    </div>
+                    <div class="col-10 col-lg-3 my-2 p-3 service">
+                        <svg class="mb-3" width="50" height="50" viewBox="0 0 64 64" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M55.024 24.704C55.0577 24.1338 54.9703 23.563 54.7677 23.029C54.565 22.495 54.2516 22.0099 53.8481 21.6057C53.4446 21.2014 52.9602 20.8872 52.4265 20.6835C51.8929 20.4798 51.3223 20.3914 50.752 20.424C46.656 20.512 42.56 20.424 38.456 20.424H37.736V19.704C37.736 17.144 37.736 14.576 37.736 12.016C37.7716 11.598 37.7152 11.1773 37.5708 10.7834C37.4263 10.3896 37.1974 10.0322 36.9 9.73631C36.6026 9.44044 36.244 9.21331 35.8494 9.0709C35.4548 8.92848 35.0338 8.87424 34.616 8.91197H12.088C11.67 8.8806 11.25 8.94013 10.8572 9.08646C10.4643 9.23279 10.1077 9.46245 9.81204 9.75967C9.51635 10.0569 9.28851 10.4146 9.1442 10.8082C8.99989 11.2019 8.94252 11.6221 8.97603 12.04V51.816C8.94267 52.2342 9.00008 52.6547 9.14434 53.0487C9.2886 53.4427 9.51629 53.8009 9.81182 54.0987C10.1074 54.3965 10.4638 54.6269 10.8566 54.7742C11.2495 54.9215 11.6695 54.9821 12.088 54.952C19.592 54.952 27.0987 54.952 34.608 54.952C35.0255 54.9883 35.4459 54.9331 35.8398 54.7901C36.2338 54.6472 36.5918 54.4201 36.8888 54.1245C37.1859 53.8289 37.4149 53.4721 37.5599 53.0789C37.7048 52.6857 37.7622 52.2656 37.728 51.848C37.728 49.264 37.728 46.688 37.728 44.104V43.44H50.816C53.432 43.44 55 41.84 55 39.24C55 34.4 54.96 29.544 55.024 24.704ZM50.864 22.4C52.136 22.4 52.912 23 53.056 24.088C53.0663 24.1516 53.0663 24.2164 53.056 24.28H20.568C20.531 23.8338 20.6663 23.3903 20.946 23.0407C21.2257 22.6911 21.6286 22.4618 22.072 22.4C22.2771 22.3841 22.483 22.3841 22.688 22.4H50.864ZM22.728 43.44H35.776V46.288H10.976V17.6H35.776V20.464H22.608C21.7122 20.4129 20.8273 20.6805 20.1098 21.2193C19.3923 21.7581 18.8887 22.5334 18.688 23.408C18.6068 23.7918 18.5692 24.1837 18.576 24.576C18.576 29.504 18.576 34.4266 18.576 39.344C18.584 41.88 20.16 43.432 22.728 43.44ZM20.536 26.248H53.056V28.08H20.536V26.248ZM10.936 11.736C10.9421 11.5066 11.0359 11.2883 11.1981 11.1261C11.3604 10.9639 11.5787 10.87 11.808 10.864C11.9758 10.852 12.1442 10.852 12.312 10.864H34.4C35.552 10.864 35.808 11.128 35.808 12.288V15.632H10.904C10.904 14.304 10.88 13.024 10.92 11.736H10.936ZM35.808 52.12C35.8091 52.341 35.7277 52.5545 35.5798 52.7187C35.4318 52.8829 35.228 52.9861 35.008 53.008C34.8032 53.0278 34.5969 53.0278 34.392 53.008H12.352C11.168 53.008 10.896 52.736 10.896 51.56V48.264H35.816C35.816 49.6 35.824 50.848 35.808 52.12ZM53.088 30.656V39.248C53.088 40.8 52.376 41.52 50.832 41.52C41.56 41.52 32.296 41.52 23.032 41.52C21.112 41.52 20.272 40.552 20.536 38.64H22.744C24.208 38.64 25.664 38.64 27.128 38.64C27.3805 38.64 27.6227 38.5397 27.8012 38.3611C27.9797 38.1826 28.08 37.9405 28.08 37.688C28.08 37.4355 27.9797 37.1933 27.8012 37.0148C27.6227 36.8363 27.3805 36.736 27.128 36.736H20.528V30.056H53.088V30.656Z"
+                                fill="#FF9601" />
+                            <path
+                                d="M46.4 39.6C46.969 39.6 47.5253 39.4309 47.9981 39.1143C48.4709 38.7976 48.8389 38.3477 49.0556 37.8215C49.2722 37.2953 49.3277 36.7166 49.2149 36.1588C49.1021 35.6011 48.8262 35.0894 48.4222 34.6887C48.0181 34.288 47.5041 34.0164 46.9454 33.9083C46.3868 33.8002 45.8085 33.8605 45.2842 34.0816C44.7598 34.3026 44.313 34.6745 44.0003 35.1499C43.6876 35.6254 43.5232 36.183 43.528 36.752C43.5364 37.5089 43.8424 38.232 44.3799 38.765C44.9174 39.298 45.6431 39.598 46.4 39.6ZM46.4 35.776C46.5275 35.7821 46.6526 35.8136 46.7678 35.8686C46.8831 35.9236 46.9862 36.0011 47.0711 36.0964C47.156 36.1918 47.2211 36.3031 47.2624 36.424C47.3038 36.5448 47.3207 36.6726 47.312 36.8C47.2843 37.0366 47.169 37.2542 46.9887 37.4099C46.8085 37.5656 46.5764 37.6481 46.3383 37.6411C46.1002 37.634 45.8734 37.538 45.7027 37.3719C45.5319 37.2059 45.4296 36.9818 45.416 36.744C45.4149 36.6152 45.4397 36.4875 45.4889 36.3685C45.5382 36.2495 45.6109 36.1417 45.7027 36.0514C45.7945 35.961 45.9036 35.8901 46.0234 35.8428C46.1432 35.7955 46.2712 35.7728 46.4 35.776Z"
+                                fill="#FF9601" />
+                        </svg>
+                        <h6 class="fw-bold">Pagamenti flessibili</h6>
+                        <span>
+                            Decidi in autonomia il metodo di pagamento più utile per te: finanziamento, carte di credito/debito e bonifico bancario.
+                        </span>
+                        <a class="btn px-0 fw-bold d-none more-btn" href="#payments">
+                            Scopri di più
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928932C11.9526 0.538408 11.3195 0.538408 10.9289 0.928932C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9H18V7H1V9Z"
+                                    fill="#000000" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-10 col-lg-3 my-2 p-3 service">
+                        <img class="mb-3"
+                            src="../assets/img/clienti/leox-clienti-icon-autoriparatori-verificati.svg" height="50"
+                            alt="Verified icon">
+                        <h6 class="fw-bold">Autoriparatori verificati</h6>
+                        <span>
+                            Accesso a professionisti certificati.
+                        </span>
+                        <a class="btn px-0 fw-bold d-none more-btn" href="#verified">
+                            Scopri di più
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928932C11.9526 0.538408 11.3195 0.538408 10.9289 0.928932C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9H18V7H1V9Z"
+                                    fill="#000000" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-10 col-lg-3 my-2 p-3 service">
+                        <img class="mb-3"
+                            src="../assets/img/clienti/leox-clienti-icon-privacy-garantita.svg"
+                            height="50" alt="Privacy icon">
+                        <h6 class="fw-bold">Privacy garantita</h6>
+                        <span>
+                            La tua modalità di pagamento rimane riservata, proteggendo così la tua privacy finanziaria.
+                        </span>
+                        <a class="btn px-0 fw-bold d-none more-btn" href="#privacy">
+                            Scopri di più
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928932C11.9526 0.538408 11.3195 0.538408 10.9289 0.928932C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9H18V7H1V9Z"
+                                    fill="#000000" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!---------------------------------------------------------------------------------------------->
 
 
