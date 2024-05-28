@@ -1,4 +1,4 @@
-:root{
+:root {
     --blue-color: #010C89;
     --orange-color: #FF9601;
     --green-color: #00E67A;
@@ -8,7 +8,7 @@
 /* UTILITY CLASSES */
 
 /* Green buttons */
-.btn-green{
+.btn-green {
     border-radius: 25px;
     line-height: 0.5rem;
     padding-inline: 50px;
@@ -16,7 +16,7 @@
     background-color: var(--green-color);
 }
 
-.btn-green-outline{
+.btn-green-outline {
     border-radius: 25px;
     line-height: 0.5rem;
     padding-inline: 50px;
@@ -28,14 +28,9 @@
     background-color: var(--green-color);
 }
 
-
-
-
 .btn-arrow img {
     margin-left: 10px;
 }
-
-
 
 /* Arrow animation on hover */
 
@@ -45,27 +40,26 @@
 }
 
 @keyframes bounceRight {
+
     0%,
     20%,
     50%,
     80%,
     100% {
-      -ms-transform: translateX(0);
-      transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
     }
+
     40% {
-      -ms-transform: translateX(30px);
-      transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        transform: translateX(30px);
     }
+
     60% {
-      -ms-transform: translateX(15px);
-      transform: translateX(15px);
+        -ms-transform: translateX(15px);
+        transform: translateX(15px);
     }
 }
-
-
-
-
 
 .bg-blue {
     background-color: rgba(2, 76, 155, 0.05);
@@ -73,6 +67,24 @@
 
 .bg-orange {
     background-color: rgba(255, 149, 1, 0.05);
+}
+
+/* Services sections */
+
+.m-check {
+    margin-top: 0.1rem;
+}
+
+/* lg up */
+
+@media (min-width: 767.98px) { 
+    .services-img-left {
+        padding-right: 20%;
+    }
+
+    .services-img-right {
+        padding-left: 20%;
+    }
 }
 
 /* END UTILITY CLASSES */
@@ -106,6 +118,7 @@ main {
     margin-top: 70px;
 }
 
-main {
-    margin-top: 70px;
+svg {
+    min-width: 32px;
+    min-height: 32px;
 }
