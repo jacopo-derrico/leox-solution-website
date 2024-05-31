@@ -75,6 +75,10 @@
     background-color: rgba(255, 149, 1, 0.05);
 }
 
+.bg-green {
+    background-color: var(--green-color);
+}
+
 /* Services sections */
 
 .m-check {
