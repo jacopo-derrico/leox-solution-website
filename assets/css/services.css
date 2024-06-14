@@ -1,15 +1,51 @@
-.services span {
-    font-size: smaller;
-}
-
 .service {
     height: 200px;
+    overflow: hidden;
 }
 
-.service:hover{
+.services p {
+    font-size: smaller;
+    line-height: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.service h6 {
+    transition: all 0.5s ease;
+}
+
+.service a {
+    font-size: .9rem;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.service .service-card-icon {
+    transition: all 0.5s ease;
+}
+
+.service:hover {
     background-color: var(--green-color);
     border-radius: 10px;
     box-shadow: 0 4px 32px rgba(0, 230, 123, 0.2);
+}
+
+.service:hover h6 {
+    transform: translateY(-40px);
+}
+
+.service:hover p {
+    transform: translateY(-40px);
+}
+
+.service:hover a {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.service:hover .service-card-icon {
+    transform: translateY(-70px);
+    opacity: 0;
 }
 
 /* .service:hover > img {
