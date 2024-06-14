@@ -4,6 +4,10 @@
     --green-color: #00E67A;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* UTILITY CLASSES */
 
