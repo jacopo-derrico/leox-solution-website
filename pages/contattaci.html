@@ -35,12 +35,15 @@
         })();
     </script>
     <script type="text/javascript">
+        
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
+                const successModal = new bootstrap.Modal('#successModal')
                 event.preventDefault();
                 emailjs.sendForm('leoxContactForm', 'contact_client', this)
-                    .then(() => {
+                .then(() => {
                         console.log('SUCCESS!');
+                        successModal.show();
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
@@ -85,6 +88,22 @@
 
     <!-- MAIN ------------------------------------------------------------------------------------>
     <main class="container-fluid">
+
+        <!-- Success message modal -->
+        <div class="modal fade" tabindex="-1" id="successModal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+              <div class="modal-content py-3">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title px-5">Messaggio inviato con successo!</h5>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-green text-center" id="backToHome">Torna alla home</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Contact form -->
         <section class="row py-5">
             <div class="col-lg-10 p-lg-0 mx-auto">
                 <div class="row flex-lg-row flex-row-reverse gap-5 gap-lg-0 align-items-center align-items-lg-start">
