@@ -1,0 +1,7 @@
+input, textarea {
+    background-image: none !important;
+}
+
+.invalid-feedback {
+    text-align: start;
+}
