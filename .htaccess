@@ -1,15 +1,7 @@
-@REM Enable URL rewriting
 RewriteEngine On
-
-@REM Rule for the homepage
 DirectoryIndex index.html
-
-@REM Remove .html extension and 'pages' subfolder from URLs
 RewriteRule ^contattaci/?$ /pages/contattaci.html [L]
 RewriteRule ^clienti/?$ /pages/clienti.html [L]
 RewriteRule ^diventa-partner/?$ /pages/diventa-partner.html [L]
-
-@REM General rule for other cases if needed
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/?$ /pages/$1.html [L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
