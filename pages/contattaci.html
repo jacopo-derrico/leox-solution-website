@@ -97,15 +97,19 @@
                             <input type="hidden" name="contact_number">
                             <div class="mb-3">
                                 <input type="text" class="form-control" name="from_name" placeholder="Nome*" required>
+                                <div class="invalid-feedback">Inserisci un nome.</div>
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" name="from_last_name" placeholder="Cognome*" required>
+                                <div class="invalid-feedback">Inserisci un cognome.</div>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" name="from_email" placeholder="Email*" required>
+                                <input id="email" type="email" class="form-control" name="from_email" placeholder="Email*" required>
+                                <div class="invalid-feedback">Inserisci un'email.</div>
                             </div>
                             <div>
                                 <textarea class="form-control" name="message" placeholder="Messaggio*" rows="5" required></textarea>
+                                <div class="invalid-feedback">Inserisci un messaggio.</div>
                             </div>
                             <div class="form-text text-start mb-3">Tutti i campi sono obbligatori.</div>
                             <input class="btn-green mx-auto" type="submit" value="Invia">
