@@ -5,3 +5,8 @@ input, textarea {
 .invalid-feedback {
     text-align: start;
 }
+
+.contact-section {
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
