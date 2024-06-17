@@ -111,49 +111,59 @@
                         <h1>Vuoi unirti a Leox?</h1>
                         <p>Scrivici e ti ricontatteremo al più presto!</p>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 my-5">
                         <form id="partner-form" class="text-center needs-validation">
                             <input type="hidden" name="contact_number">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" name="partner_name" placeholder="Nome*" required>
-                                <div class="invalid-feedback">Inserisci un nome.</div>
+                            <div class="row">
+                                <div class="col-lg mb-3">
+                                    <input type="text" class="form-control" name="partner_name" placeholder="Nome*" required>
+                                    <div class="invalid-feedback">Inserisci un nome.</div>
+                                </div>
+                                <div class="col-lg mb-3">
+                                    <input type="text" class="form-control" name="partner_last_name" placeholder="Cognome*" required>
+                                    <div class="invalid-feedback">Inserisci un cognome.</div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" name="partner_last_name" placeholder="Cognome*" required>
-                                <div class="invalid-feedback">Inserisci un cognome.</div>
+                            <div class="row">
+                                <div class="col-lg mb-3">
+                                    <input type="number" class="form-control" name="partner_phone" placeholder="Telefono*" required>
+                                    <div class="invalid-feedback">Inserisci un numero di telefono.</div>
+                                </div>
+                                <div class="col-lg mb-3">
+                                    <input id="email" type="email" class="form-control" name="from_email" placeholder="Email*" required>
+                                    <div class="invalid-feedback">Inserisci un'email.</div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <input type="number" class="form-control" name="partner_phone" placeholder="Telefono*" required>
-                                <div class="invalid-feedback">Inserisci un numero di telefono.</div>
+                            <div class="row">
+                                <div class="col-lg mb-3">
+                                    <input type="name" class="form-control" name="partner_company" placeholder="Ragione Sociale*" required>
+                                    <div class="invalid-feedback">Inserisci la ragione sociale.</div>
+                                </div>
+                                <div class="col-lg mb-3">
+                                    <input type="number" class="form-control" name="partner_iva" placeholder="P.IVA*" required>
+                                    <div class="invalid-feedback">Inserisci una partita IVA di 11 cifre.</div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <input id="email" type="email" class="form-control" name="from_email" placeholder="Email*" required>
-                                <div class="invalid-feedback">Inserisci un'email.</div>
+                            <div class="row">
+                                <div class="col-lg mb-3">
+                                    <input type="name" class="form-control" name="partner_address" placeholder="Indirizzo*" required>
+                                    <div class="invalid-feedback">Inserisci un indirizzo.</div>
+                                </div>
+                                <div class="col-lg mb-3">
+                                    <input type="name" class="form-control" name="partner_city" placeholder="Città*" required>
+                                    <div class="invalid-feedback">Inserisci una città.</div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <input type="name" class="form-control" name="partner_company" placeholder="Ragione Sociale*" required>
-                                <div class="invalid-feedback">Inserisci la ragione sociale.</div>
-                            </div>
-                            <div class="mb-3">
-                                <input type="number" class="form-control" name="partner_iva" placeholder="P.IVA*" required>
-                                <div class="invalid-feedback">Inserisci una partita IVA di 11 cifre.</div>
-                            </div>
-                            <div class="mb-3">
-                                <input type="name" class="form-control" name="partner_address" placeholder="Indirizzo*" required>
-                                <div class="invalid-feedback">Inserisci un indirizzo.</div>
-                            </div>
-                            <div class="mb-3">
-                                <input type="name" class="form-control" name="partner_city" placeholder="Città*" required>
-                                <div class="invalid-feedback">Inserisci una città.</div>
-                            </div>
-                            <div class="mb-3">
-                                <select id="province" class="form-select" name="partner_province" required>
-                                    <option disabled selected>Provincia*</option>
-                                  </select>
-                            </div>
-                            <div class="mb-3">
-                                <input type="number" class="form-control" name="partner_cap" placeholder="CAP*" required>
-                                <div class="invalid-feedback">Inserisci un CAP.</div>
+                            <div class="row">
+                                <div class="col-lg mb-3">
+                                    <select id="province" class="form-select" name="partner_province" required>
+                                        <option disabled selected>Provincia*</option>
+                                      </select>
+                                </div>
+                                <div class="col-lg mb-3">
+                                    <input type="number" class="form-control" name="partner_cap" placeholder="CAP*" required>
+                                    <div class="invalid-feedback">Inserisci un CAP.</div>
+                                </div>
                             </div>
                             <div>
                                 <textarea class="form-control" name="message" placeholder="Messaggio*" rows="5" ></textarea>
