@@ -31,17 +31,17 @@
     <script type="text/javascript">
         (function () {
             emailjs.init({
-                publicKey: "OgXWQjsAYgatOtOpb",
+                publicKey: "jV4WK7CKZ0DQNCp_v",
             });
         })();
     </script>
     <script type="text/javascript">
         
         window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
+            document.getElementById('partner-form').addEventListener('submit', function (event) {
                 const successModal = new bootstrap.Modal('#successPartnerModal')
                 event.preventDefault();
-                emailjs.sendForm('leoxContactForm', 'contact_client', this)
+                emailjs.sendForm('leoxPartnerForm', 'contact_partner', this)
                 .then(() => {
                         console.log('SUCCESS!');
                         successModal.show();
@@ -213,4 +213,11 @@
 
     <!-- JS -->
     <script src="/assets/js/hamburger.js"></script>
+    <script>
+        const backHomeBtnPartner = document.getElementById('backToHomePartner');
+
+        backHomeBtnPartner.addEventListener('click', function () {
+            window.location.replace("../index.html");
+        });
+    </script>
 </body>
