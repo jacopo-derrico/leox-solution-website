@@ -3,5 +3,7 @@ DirectoryIndex index.html
 RewriteRule ^contattaci/?$ /pages/contattaci.html [L]
 RewriteRule ^clienti/?$ /pages/clienti.html [L]
 RewriteRule ^diventa-partner/?$ /pages/diventa-partner.html [L]
+RewriteRule ^privacy-policy/?$ /pages/privacy-policy.html [L]
+RewriteRule ^termini/?$ /pages/termini.html [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
