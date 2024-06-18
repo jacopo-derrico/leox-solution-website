@@ -1,0 +1,21 @@
+main {
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+tr {
+    height: 70px;
+}
+
+th {
+    width: 150px;
+}
