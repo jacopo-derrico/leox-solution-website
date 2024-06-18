@@ -153,15 +153,3 @@ document.addEventListener('DOMContentLoaded', function () {
       }, false);
     });
 })();
-
-const backHomeBtn = document.getElementById('backToHome');
-
-backHomeBtn.addEventListener('click', function () {
-    window.location.replace("../index.html");
-});
-
-const backHomeBtnPartner = document.getElementById('backToHomePartner');
-
-backHomeBtnPartner.addEventListener('click', function () {
-    window.location.replace("../index.html");
-});

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hai domande o necessiti di assistenza? Scrivici e il nostro team ti risponderà rapidamente. Siamo qui per aiutarti con tutte le tue esigenze di autoriparazione e manutenzione auto.">
+    <meta name="description"
+        content="Hai domande o necessiti di assistenza? Scrivici e il nostro team ti risponderà rapidamente. Siamo qui per aiutarti con tutte le tue esigenze di autoriparazione e manutenzione auto.">
     <title>LeoX | Contattaci per ricevere più informazioni</title>
 
     <!-- FAVICON -->
@@ -36,13 +37,13 @@
         })();
     </script>
     <script type="text/javascript">
-        
+
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 const successModal = new bootstrap.Modal('#successModal')
                 event.preventDefault();
                 emailjs.sendForm('leoxContactForm', 'contact_client', this)
-                .then(() => {
+                    .then(() => {
                         console.log('SUCCESS!');
                         successModal.show();
                     }, (error) => {
@@ -97,14 +98,14 @@
         <!-- Success message modal -->
         <div class="modal fade" tabindex="-1" id="successModal" data-bs-backdrop="static">
             <div class="modal-dialog">
-              <div class="modal-content py-3">
-                <div class="modal-header border-0">
-                  <h5 class="modal-title px-5">Messaggio inviato con successo!</h5>
+                <div class="modal-content py-3">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title px-5">Messaggio inviato con successo!</h5>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-green text-center" id="backToHome">Torna alla home</button>
+                    </div>
                 </div>
-                <div class="modal-footer justify-content-center">
-                  <button type="button" class="btn btn-green text-center" id="backToHome">Torna alla home</button>
-                </div>
-              </div>
             </div>
         </div>
 
@@ -124,15 +125,18 @@
                                 <div class="invalid-feedback">Inserisci un nome.</div>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" name="from_last_name" placeholder="Cognome*" required>
+                                <input type="text" class="form-control" name="from_last_name" placeholder="Cognome*"
+                                    required>
                                 <div class="invalid-feedback">Inserisci un cognome.</div>
                             </div>
                             <div class="mb-3">
-                                <input id="email" type="email" class="form-control" name="from_email" placeholder="Email*" required>
+                                <input id="email" type="email" class="form-control" name="from_email"
+                                    placeholder="Email*" required>
                                 <div class="invalid-feedback">Inserisci un'email.</div>
                             </div>
                             <div>
-                                <textarea class="form-control" name="message" placeholder="Messaggio*" rows="5" required></textarea>
+                                <textarea class="form-control" name="message" placeholder="Messaggio*" rows="5"
+                                    required></textarea>
                                 <div class="invalid-feedback">Inserisci un messaggio.</div>
                             </div>
                             <div class="form-text text-start mb-3">Tutti i campi sono obbligatori.</div>
@@ -162,7 +166,8 @@
     </footer>
     <div class="copyright container text-center py-4">
         <p>
-            © Copyright 2024. Tutti i diritti riservati | <a class="a-hover" href="/privacy-policy">Privacy & Cookie Policy</a> | <a class="a-hover" href="/termini">Termini e condizioni</a>
+            © Copyright 2024. Tutti i diritti riservati | <a class="a-hover" href="/privacy-policy">Privacy & Cookie
+                Policy</a> | <a class="a-hover" href="/termini">Termini e condizioni</a>
         </p>
     </div>
     <!---------------------------------------------------------------------------------------------->
@@ -171,7 +176,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    
+
     <!-- JS -->
     <script src="/assets/js/hamburger.js"></script>
+    <script>
+        const backHomeBtn = document.getElementById('backToHome');
+
+        backHomeBtn.addEventListener('click', function () {
+            window.location.replace("../index.html");
+        });
+    </script>
 </body>
